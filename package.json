@@ -1,8 +1,7 @@
 {
   "name": "design-template-5",
   "version": "1.0.0",
-  "description": "",
-  "main": "analyze.js",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
