@@ -235,52 +235,193 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
             </div>
           </div>
 
-          {/* Right Hero Graphics (Dual 3D iPhone mockups + Floating Experience Badge) */}
+          {/* Right Hero Graphics (Dual 3D Smartphone Mockups + Floating Experience Badge) */}
           <div
             style={{
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              minHeight: '560px',
             }}
           >
-            {/* 3D Mockup Image */}
             <div
-              className="animate-float"
+              className="animate-float hero-mockup-container"
               style={{
                 position: 'relative',
-                maxWidth: '100%',
-                filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.35))',
+                width: '100%',
+                maxWidth: '520px',
+                height: '560px',
               }}
             >
-              <Image
-                src="/images/hero-mockup.png"
-                alt="Mobile App"
-                width={460}
-                height={520}
-                priority
+              {/* Secondary Phone (Back - Map Screen) */}
+              <div
                 style={{
-                  width: '100%',
-                  height: 'auto',
-                  objectFit: 'contain',
+                  position: 'absolute',
+                  right: '25px',
+                  top: '15px',
+                  width: '260px',
+                  height: '515px',
+                  transform: 'rotate(9deg)',
+                  background: 'linear-gradient(145deg, #2A3644, #0F151E)',
+                  borderRadius: '38px',
+                  padding: '8px',
+                  boxShadow: '-15px 25px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.25)',
+                  zIndex: 2,
+                  transition: 'transform 0.4s ease',
                 }}
-              />
+                className="hero-phone-back"
+              >
+                {/* Dynamic Island */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '14px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '65px',
+                    height: '16px',
+                    background: '#000000',
+                    borderRadius: '10px',
+                    zIndex: 10,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'flex-end',
+                    paddingRight: '6px',
+                  }}
+                >
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#1A2433' }} />
+                </div>
+
+                {/* Inner Screen */}
+                <div
+                  style={{
+                    position: 'relative',
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '30px',
+                    overflow: 'hidden',
+                    background: '#FFFFFF',
+                  }}
+                >
+                  <Image
+                    src="/images/app-screen-map.png"
+                    alt="ABVC Surveillance Map"
+                    fill
+                    sizes="260px"
+                    priority
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'top center',
+                    }}
+                  />
+                  {/* Subtle Gloss Reflection */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      height: '45%',
+                      background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 60%)',
+                      pointerEvents: 'none',
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Primary Phone (Front - Dashboard Screen) */}
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '20px',
+                  top: '40px',
+                  width: '275px',
+                  height: '540px',
+                  transform: 'rotate(-5deg)',
+                  background: 'linear-gradient(145deg, #334456, #121A24)',
+                  borderRadius: '42px',
+                  padding: '9px',
+                  boxShadow: '0 30px 70px rgba(0, 0, 0, 0.6), 0 10px 25px rgba(8, 100, 170, 0.3), 0 0 0 1.5px rgba(255, 255, 255, 0.35)',
+                  zIndex: 8,
+                  transition: 'transform 0.4s ease',
+                }}
+                className="hero-phone-front"
+              >
+                {/* Dynamic Island */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '16px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '72px',
+                    height: '18px',
+                    background: '#000000',
+                    borderRadius: '12px',
+                    zIndex: 10,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'flex-end',
+                    paddingRight: '8px',
+                  }}
+                >
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#1A2433' }} />
+                </div>
+
+                {/* Inner Screen */}
+                <div
+                  style={{
+                    position: 'relative',
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '34px',
+                    overflow: 'hidden',
+                    background: '#FFFFFF',
+                  }}
+                >
+                  <Image
+                    src="/images/app-screen-dashboard.png"
+                    alt="ABVC Super Administrator Dashboard"
+                    fill
+                    sizes="275px"
+                    priority
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'top center',
+                    }}
+                  />
+                  {/* Subtle Gloss Reflection */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      height: '45%',
+                      background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 60%)',
+                      pointerEvents: 'none',
+                    }}
+                  />
+                </div>
+              </div>
 
               {/* Floating Experience Badge */}
               <div
                 style={{
                   position: 'absolute',
-                  bottom: '30px',
-                  right: '20px',
+                  bottom: '25px',
+                  right: '10px',
                   background: '#C1A74F',
                   color: '#FFFFFF',
-                  padding: '14px 22px',
+                  padding: '13px 22px',
                   borderRadius: '16px',
-                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.25)',
+                  boxShadow: '0 14px 35px rgba(0, 0, 0, 0.35)',
                   textAlign: 'center',
                   minWidth: '130px',
                   transform: 'rotate(-2deg)',
-                  border: '2px solid rgba(255, 255, 255, 0.5)',
+                  border: '2px solid rgba(255, 255, 255, 0.6)',
+                  zIndex: 20,
                   transition: 'transform 0.3s ease',
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)')}
@@ -310,6 +451,17 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
             display: flex;
             flex-direction: column;
             align-items: center;
+          }
+          .hero-mockup-container {
+            transform: scale(0.88);
+            margin: 0 auto;
+          }
+        }
+        @media (max-width: 520px) {
+          .hero-mockup-container {
+            transform: scale(0.72);
+            transform-origin: center top;
+            height: 420px !important;
           }
         }
       `}</style>
