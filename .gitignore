@@ -1,0 +1,71 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js build output
+/.next/
+/out/
+/build
+/dist
+
+# Production
+/build
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel & Turbo
+.vercel
+.turbo
+
+# Temporary / Scratch scripts and analysis artifacts
+analyze.js
+extract_images.js
+inspect_paths.js
+parse_svg.js
+preview.html
+list_assets.js
+map_patterns.js
+inspect_all_patterns.js
+setup_assets.js
+take_screenshot.js
+take_screenshot_full.js
+take_live_screenshots.*
+take_fullpage.cjs
+copy_artifacts.cjs
+extracted_assets/
+
+# Root screenshot / capture files
+*.png
+*.jpg
+*.jpeg
+!public/images/*
+!public/images/**/*
+
+# OS and IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts

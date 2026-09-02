@@ -1,0 +1,172 @@
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import { Briefcase, Target, DollarSign, ArrowRight } from 'lucide-react';
+
+interface FeatureBannerProps {
+  onOpenVideo?: () => void;
+  onOpenQuote?: () => void;
+}
+
+export default function FeatureBanner({ onOpenVideo }: FeatureBannerProps) {
+  return (
+    <section id="features" style={{ position: 'relative', marginTop: '-60px', zIndex: 30, paddingBottom: '40px' }}>
+      <div className="container">
+        <div
+          style={{
+            background: '#12332E',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.25)',
+            display: 'grid',
+            gridTemplateColumns: '260px 1fr 1fr 1fr',
+            gap: '24px',
+            alignItems: 'center',
+          }}
+          className="feature-banner-grid"
+        >
+          {/* Left Thumbnail Card: "How Does It Work?" */}
+          <div
+            onClick={onOpenVideo}
+            style={{
+              position: 'relative',
+              borderRadius: '14px',
+              overflow: 'hidden',
+              cursor: 'pointer',
+              height: '140px',
+              boxShadow: '0 8px 20px rgba(0,0,0,0.3)',
+              transition: 'transform 0.3s ease',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.02)')}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+          >
+            <Image
+              src="/images/video-thumb.jpg"
+              alt="How Does It Work?"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+            {/* Dark gradient overlay */}
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(180deg, rgba(15, 43, 39, 0.2) 0%, rgba(15, 43, 39, 0.9) 100%)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'flex-end',
+                padding: '16px',
+                color: '#FFFFFF',
+              }}
+            >
+              <div style={{ fontSize: '15px', fontWeight: 700, marginBottom: '4px' }}>How Does It Work?</div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  color: '#CBE96B',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                }}
+              >
+                Learn More <ArrowRight size={13} />
+              </div>
+            </div>
+          </div>
+
+          {/* Pillar 1: Operational Consulting */}
+          <div style={{ padding: '0 12px' }}>
+            <div
+              style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
+                background: 'rgba(203, 233, 107, 0.12)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '14px',
+                color: '#CBE96B',
+              }}
+            >
+              <Briefcase size={18} />
+            </div>
+            <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '6px' }}>
+              Operational Consulting
+            </h3>
+            <p style={{ fontSize: '12.5px', color: '#9BB0AA', lineHeight: 1.5 }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut.
+            </p>
+          </div>
+
+          {/* Pillar 2: Strategy Consulting */}
+          <div style={{ padding: '0 12px' }}>
+            <div
+              style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
+                background: 'rgba(203, 233, 107, 0.12)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '14px',
+                color: '#CBE96B',
+              }}
+            >
+              <Target size={18} />
+            </div>
+            <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '6px' }}>
+              Strategy Consulting
+            </h3>
+            <p style={{ fontSize: '12.5px', color: '#9BB0AA', lineHeight: 1.5 }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut.
+            </p>
+          </div>
+
+          {/* Pillar 3: Financial Consulting */}
+          <div style={{ padding: '0 12px' }}>
+            <div
+              style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
+                background: 'rgba(203, 233, 107, 0.12)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '14px',
+                color: '#CBE96B',
+              }}
+            >
+              <DollarSign size={18} />
+            </div>
+            <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '6px' }}>
+              Financial Consulting
+            </h3>
+            <p style={{ fontSize: '12.5px', color: '#9BB0AA', lineHeight: 1.5 }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @media (max-width: 1024px) {
+          .feature-banner-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 20px;
+          }
+        }
+        @media (max-width: 640px) {
+          .feature-banner-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}

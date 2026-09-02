@@ -1,0 +1,318 @@
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import { ArrowRight, Play, CheckCircle2, Star } from 'lucide-react';
+
+interface HeroProps {
+  onOpenQuote: () => void;
+  onOpenVideo: () => void;
+}
+
+export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
+  return (
+    <section
+      id="home"
+      style={{
+        position: 'relative',
+        background: 'linear-gradient(145deg, #0A221F 0%, #0F2D28 35%, #1B453D 65%, #4C7268 85%, #B4C8BF 100%)',
+        paddingTop: '130px',
+        paddingBottom: '120px',
+        overflow: 'hidden',
+        color: '#FFFFFF',
+      }}
+    >
+      {/* Ambient background glows */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '-10%',
+          right: '5%',
+          width: '500px',
+          height: '500px',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(203, 233, 107, 0.15) 0%, rgba(203, 233, 107, 0) 70%)',
+          filter: 'blur(60px)',
+          pointerEvents: 'none',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '5%',
+          left: '10%',
+          width: '400px',
+          height: '400px',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(18, 51, 46, 0.6) 0%, transparent 70%)',
+          filter: 'blur(50px)',
+          pointerEvents: 'none',
+        }}
+      />
+
+      <div className="container" style={{ position: 'relative', zIndex: 10 }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1.05fr 0.95fr',
+            gap: '40px',
+            alignItems: 'center',
+          }}
+          className="hero-grid"
+        >
+          {/* Left Content Column */}
+          <div>
+            {/* Top Badges Row */}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '12px',
+                marginBottom: '20px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  background: 'rgba(255, 255, 255, 0.08)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  padding: '6px 16px',
+                  borderRadius: '9999px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#E3ECE8',
+                }}
+              >
+                Welcome To Optibiz
+              </div>
+
+              {/* Floating feature label */}
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontSize: '12px',
+                  fontWeight: 500,
+                  color: '#C6DDD5',
+                  maxWidth: '240px',
+                  lineHeight: 1.3,
+                }}
+              >
+                <CheckCircle2 size={16} color="#CBE96B" style={{ flexShrink: 0 }} />
+                <span>Guiding Financial Journey To Elevating Your Business Destiny</span>
+              </div>
+            </div>
+
+            {/* Main Headline */}
+            <h1
+              style={{
+                fontSize: 'clamp(36px, 4.5vw, 56px)',
+                fontWeight: 800,
+                lineHeight: 1.12,
+                color: '#FFFFFF',
+                letterSpacing: '-0.025em',
+                marginBottom: '24px',
+              }}
+            >
+              Where The <br />
+              Expertise Creates <br />
+              Excellence
+            </h1>
+
+            {/* Description */}
+            <p
+              style={{
+                fontSize: '15.5px',
+                lineHeight: 1.7,
+                color: '#B5CAC3',
+                maxWidth: '480px',
+                marginBottom: '36px',
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+
+            {/* CTA Buttons Row */}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '18px',
+                marginBottom: '48px',
+                flexWrap: 'wrap',
+              }}
+            >
+              <button
+                onClick={onOpenQuote}
+                className="btn-lime"
+                style={{
+                  fontSize: '15px',
+                  padding: '13px 28px',
+                }}
+              >
+                Let&apos;s Get Started <ArrowRight size={17} />
+              </button>
+
+              {/* Video Play Button */}
+              <button
+                onClick={onOpenVideo}
+                aria-label="Play Introduction Video"
+                style={{
+                  width: '46px',
+                  height: '46px',
+                  borderRadius: '50%',
+                  background: '#FFFFFF',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 6px 20px rgba(0, 0, 0, 0.15)',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.08)';
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(203, 233, 107, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.15)';
+                }}
+              >
+                <Play size={18} fill="#0F2B27" color="#0F2B27" style={{ marginLeft: '2px' }} />
+              </button>
+            </div>
+
+            {/* Social Proof & Rating Bottom Bar */}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '32px',
+                flexWrap: 'wrap',
+                paddingTop: '20px',
+                borderTop: '1px solid rgba(255, 255, 255, 0.12)',
+              }}
+            >
+              {/* Star Rating & Score */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '2px', marginBottom: '2px' }}>
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={14} fill="#F7C948" color="#F7C948" />
+                    ))}
+                    <span style={{ fontSize: '11.5px', color: '#D1DDD9', marginLeft: '4px', fontWeight: 600 }}>
+                      (4,5/5)
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
+                    <span style={{ fontSize: '24px', fontWeight: 800, color: '#FFFFFF' }}>4.5</span>
+                    <span style={{ fontSize: '11px', color: '#A1B7B0', lineHeight: 1.2, maxWidth: '100px' }}>
+                      Positive Reviews From Our Customer
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Team Avatar Stack */}
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: 600, color: '#C6DDD5', marginBottom: '6px' }}>
+                  Join Our Team Now:
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <Image
+                    src="/images/team-avatar-stack.png"
+                    alt="Optibiz Team members"
+                    width={95}
+                    height={32}
+                    style={{ objectFit: 'contain' }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Hero Graphics (Dual 3D iPhone mockups + Floating Experience Badge) */}
+          <div
+            style={{
+              position: 'relative',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            {/* 3D Mockup Image */}
+            <div
+              className="animate-float"
+              style={{
+                position: 'relative',
+                maxWidth: '100%',
+                filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.35))',
+              }}
+            >
+              <Image
+                src="/images/hero-mockup.png"
+                alt="Optibiz Mobile Finance App"
+                width={460}
+                height={520}
+                priority
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
+
+              {/* Floating Experience Badge */}
+              <div
+                style={{
+                  position: 'absolute',
+                  bottom: '30px',
+                  right: '20px',
+                  background: '#CBE96B',
+                  color: '#0F2A24',
+                  padding: '14px 22px',
+                  borderRadius: '16px',
+                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.25)',
+                  textAlign: 'center',
+                  minWidth: '130px',
+                  transform: 'rotate(-2deg)',
+                  border: '2px solid rgba(255, 255, 255, 0.5)',
+                  transition: 'transform 0.3s ease',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'rotate(-2deg) scale(1)')}
+              >
+                <div style={{ fontSize: '26px', fontWeight: 800, lineHeight: 1 }}>25+</div>
+                <div style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: '2px' }}>
+                  Years Of Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @media (max-width: 960px) {
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+          }
+          .hero-grid p {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .hero-grid > div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}
