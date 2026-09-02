@@ -159,7 +159,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
               </button>
 
               {/* Video Play Button */}
-              <button
+              {/* <button
                 onClick={onOpenVideo}
                 aria-label="Play Introduction Video"
                 style={{
@@ -183,7 +183,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                 }}
               >
                 <Play size={18} fill="#0864aa" color="#0864aa" style={{ marginLeft: '2px' }} />
-              </button>
+              </button> */}
             </div>
 
             {/* Social Proof & Rating Bottom Bar */}
