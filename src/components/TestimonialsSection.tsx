@@ -39,7 +39,7 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
   ];
 
   return (
-    <section id="testimonials" style={{ padding: '90px 0 110px 0', background: '#F7F6F1' }}>
+    <section id="testimonials" style={{ padding: '90px 0 110px 0', background: '#F8FAFC' }}>
       <div className="container">
         {/* Split Header */}
         <div
@@ -53,24 +53,24 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
           className="testimonials-header"
         >
           <div>
-            <div className="pill-badge">Testimonial</div>
-            <h2 className="section-title">
-              Positive Reviews From <br />
-              Our Clients
+            <div className="pill-badge">Lorem Ipsum</div>
+            <h2 className="section-title" style={{ color: '#191C1E' }}>
+              Lorem Ipsum Dolor <br />
+              Sit Amet Consectetur
             </h2>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '20px' }}>
-            <p className="section-subtitle">
+            <p className="section-subtitle" style={{ color: '#737784' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
             </p>
             <button onClick={onOpenQuote} className="btn-lime">
-              Learn More <ArrowRight size={16} />
+              Lorem Ipsum <ArrowRight size={16} />
             </button>
           </div>
         </div>
 
-        {/* 3 Dark Forest Green Testimonial Cards */}
+        {/* 3 Dark Blue Testimonial Cards */}
         <div
           style={{
             display: 'grid',
@@ -88,15 +88,15 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                 onMouseEnter={() => setHoveredIdx(index)}
                 onMouseLeave={() => setHoveredIdx(null)}
                 style={{
-                  background: '#0F2B27',
+                  background: '#0864aa',
                   borderRadius: '16px',
                   padding: '30px 26px 24px 26px',
                   color: '#FFFFFF',
                   boxShadow: isHovered
-                    ? '0 20px 45px rgba(15, 43, 39, 0.35)'
-                    : '0 8px 24px rgba(15, 43, 39, 0.12)',
+                    ? '0 20px 45px rgba(8, 100, 170, 0.4)'
+                    : '0 8px 24px rgba(8, 100, 170, 0.15)',
                   transform: isHovered ? 'translateY(-6px)' : 'translateY(0)',
-                  border: isHovered ? '1px solid #CBE96B' : '1px solid rgba(255, 255, 255, 0.08)',
+                  border: isHovered ? '1px solid #C1A74F' : '1px solid rgba(255, 255, 255, 0.12)',
                   transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
                   display: 'flex',
                   flexDirection: 'column',
@@ -106,7 +106,7 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                 {/* Rating Stars */}
                 <div style={{ display: 'flex', gap: '3px', marginBottom: '14px' }}>
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={14} fill="#CBE96B" color="#CBE96B" />
+                    <Star key={i} size={14} fill="#C1A74F" color="#C1A74F" />
                   ))}
                 </div>
 
@@ -115,7 +115,7 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                   style={{
                     fontSize: '13.5px',
                     lineHeight: 1.65,
-                    color: '#D1DDD9',
+                    color: '#D8E2FF',
                     marginBottom: '28px',
                   }}
                 >
@@ -129,7 +129,7 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     paddingTop: '16px',
-                    borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                    borderTop: '1px solid rgba(255, 255, 255, 0.12)',
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -140,7 +140,7 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                         height: '36px',
                         borderRadius: '50%',
                         overflow: 'hidden',
-                        border: '2px solid #CBE96B',
+                        border: '2px solid #C1A74F',
                         flexShrink: 0,
                       }}
                     >
@@ -153,13 +153,13 @@ export default function TestimonialsSection({ onOpenQuote }: TestimonialsSection
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF' }}>{item.name}</div>
-                      <div style={{ fontSize: '11.5px', color: '#8FA39C' }}>Designation</div>
+                      <div style={{ fontSize: '11.5px', color: '#B6CCFF' }}>Designation</div>
                     </div>
                   </div>
 
                   {/* Quote Icon */}
-                  <div style={{ color: '#CBE96B', opacity: 0.85 }}>
-                    <Quote size={20} fill="#CBE96B" />
+                  <div style={{ color: '#C1A74F', opacity: 0.9 }}>
+                    <Quote size={20} fill="#C1A74F" />
                   </div>
                 </div>
               </div>

@@ -14,29 +14,29 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
   const services = [
     {
       id: 1,
-      title: 'Business Strategies',
+      title: 'Lorem Ipsum',
       image: '/images/service-business.jpg',
       icon: Users,
-      desc: 'Expert strategy formulation to accelerate business scale, market expansion, and operational resilience.',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
     },
     {
       id: 2,
-      title: 'Taxes & Accounting',
+      title: 'Dolor Sit Amet',
       image: '/images/service-tax.jpg',
       icon: Landmark,
-      desc: 'Comprehensive corporate tax planning, compliance audits, and strategic financial accounting.',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
     },
     {
       id: 3,
-      title: 'Financial Planning',
+      title: 'Consectetur Elit',
       image: '/images/service-planning.jpg',
       icon: BarChart3,
-      desc: 'Holistic wealth protection, risk management, and long-term portfolio optimization strategies.',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
     },
   ];
 
   return (
-    <section id="services" style={{ padding: '90px 0', background: '#F7F6F1' }}>
+    <section id="services" style={{ padding: '90px 0', background: '#F8FAFC' }}>
       <div className="container">
         {/* Split Header */}
         <div
@@ -50,19 +50,19 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
           className="services-header"
         >
           <div>
-            <div className="pill-badge">Our Services</div>
-            <h2 className="section-title">
-              Financial Services To Grow And <br />
-              Secure Your Wealth
+            <div className="pill-badge">Services</div>
+            <h2 className="section-title" style={{ color: '#191C1E' }}>
+              Lorem Ipsum Dolor Sit Amet <br />
+              Consectetur Adipiscing
             </h2>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '20px' }}>
-            <p className="section-subtitle">
+            <p className="section-subtitle" style={{ color: '#737784' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvina.
             </p>
             <button onClick={onOpenQuote} className="btn-lime">
-              Learn More <ArrowRight size={16} />
+              Lorem Ipsum <ArrowRight size={16} />
             </button>
           </div>
         </div>
@@ -89,10 +89,11 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
                 style={{
                   borderRadius: '16px',
                   overflow: 'hidden',
-                  background: '#0F2B27',
+                  background: '#0864aa',
+                  border: '1px solid rgba(255, 255, 255, 0.12)',
                   boxShadow: isHovered
-                    ? '0 20px 40px rgba(15, 43, 39, 0.25)'
-                    : '0 8px 24px rgba(15, 43, 39, 0.08)',
+                    ? '0 20px 40px rgba(8, 100, 170, 0.3)'
+                    : '0 8px 24px rgba(8, 100, 170, 0.1)',
                   transform: isHovered ? 'translateY(-6px)' : 'translateY(0)',
                   transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
                   cursor: 'pointer',
@@ -116,7 +117,7 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      background: 'linear-gradient(180deg, transparent 40%, rgba(15, 43, 39, 0.4) 100%)',
+                      background: 'linear-gradient(180deg, transparent 40%, rgba(8, 100, 170, 0.5) 100%)',
                     }}
                   />
                 </div>
@@ -128,7 +129,7 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    background: '#0F2B27',
+                    background: '#0864aa',
                     color: '#FFFFFF',
                   }}
                 >
@@ -138,11 +139,11 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
                         width: '38px',
                         height: '38px',
                         borderRadius: '50%',
-                        background: isHovered ? '#CBE96B' : 'rgba(255, 255, 255, 0.1)',
+                        background: isHovered ? '#C1A74F' : 'rgba(255, 255, 255, 0.12)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        color: isHovered ? '#0F2A24' : '#CBE96B',
+                        color: isHovered ? '#FFFFFF' : '#C1A74F',
                         transition: 'all 0.3s ease',
                       }}
                     >
@@ -158,8 +159,8 @@ export default function ServicesSection({ onOpenQuote }: ServicesSectionProps) {
                       width: '32px',
                       height: '32px',
                       borderRadius: '50%',
-                      background: isHovered ? '#CBE96B' : 'transparent',
-                      color: isHovered ? '#0F2A24' : '#8FA39C',
+                      background: isHovered ? '#C1A74F' : 'transparent',
+                      color: isHovered ? '#FFFFFF' : '#B6CCFF',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',

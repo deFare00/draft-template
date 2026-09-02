@@ -11,9 +11,9 @@ export default function HowWeWorkSection() {
       <div className="container">
         {/* Section Title & Subtitle */}
         <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 60px auto' }}>
-          <div className="pill-badge">How We Work?</div>
+          <div className="pill-badge">Lorem Ipsum</div>
           <h2 className="section-title" style={{ marginBottom: '14px' }}>
-            4 Easy Steps To Achieve Your Goals
+            Lorem Ipsum Dolor Sit Amet Consectetur
           </h2>
           <p className="section-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -35,7 +35,7 @@ export default function HowWeWorkSection() {
             {/* Step 01 */}
             <StepCard
               number="01"
-              title="Identify Your Needs"
+              title="Lorem Ipsum Dolor"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus."
               isActive={activeStep === 1}
               onMouseEnter={() => setActiveStep(1)}
@@ -44,14 +44,14 @@ export default function HowWeWorkSection() {
             {/* Step 02 */}
             <StepCard
               number="02"
-              title="Strategic Planning"
+              title="Sit Amet Consectetur"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus."
               isActive={activeStep === 2}
               onMouseEnter={() => setActiveStep(2)}
             />
           </div>
 
-          {/* Center Column: Photography + Floating Partners Lime Badge */}
+          {/* Center Column: Photography + Floating Partners Badge */}
           <div
             style={{
               position: 'relative',
@@ -62,7 +62,7 @@ export default function HowWeWorkSection() {
           >
             <Image
               src="/images/work-collaboration.jpg"
-              alt="Optibiz Team Collaboration"
+              alt="Collaboration"
               width={420}
               height={420}
               style={{
@@ -73,26 +73,26 @@ export default function HowWeWorkSection() {
               }}
             />
 
-            {/* Floating Lime Badge with Logos */}
+            {/* Floating Gold Badge with Logos */}
             <div
               style={{
                 position: 'absolute',
                 bottom: '16px',
                 left: '16px',
                 right: '16px',
-                background: '#CBE96B',
+                background: '#C1A74F',
                 borderRadius: '9999px',
                 padding: '10px 20px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-around',
-                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
+                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)',
               }}
             >
               <PartnerLogo text="logoipsum" />
-              <div style={{ width: '1px', height: '14px', background: 'rgba(15, 43, 39, 0.2)' }} />
+              <div style={{ width: '1px', height: '14px', background: 'rgba(255, 255, 255, 0.4)' }} />
               <PartnerLogo text="logoipsum" />
-              <div style={{ width: '1px', height: '14px', background: 'rgba(15, 43, 39, 0.2)' }} />
+              <div style={{ width: '1px', height: '14px', background: 'rgba(255, 255, 255, 0.4)' }} />
               <PartnerLogo text="logoipsum" />
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function HowWeWorkSection() {
             {/* Step 03 */}
             <StepCard
               number="03"
-              title="Develop & Discussion"
+              title="Adipiscing Elit Sed"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus."
               isActive={activeStep === 3}
               onMouseEnter={() => setActiveStep(3)}
@@ -111,7 +111,7 @@ export default function HowWeWorkSection() {
             {/* Step 04 */}
             <StepCard
               number="04"
-              title="Precision Monitoring"
+              title="Tempor Incididunt"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus."
               isActive={activeStep === 4}
               onMouseEnter={() => setActiveStep(4)}
@@ -149,11 +149,11 @@ function StepCard({
     <div
       onMouseEnter={onMouseEnter}
       style={{
-        background: isActive ? '#FFFFFF' : '#FDFDFD',
-        border: isActive ? '2px solid #CBE96B' : '1px solid rgba(15, 43, 39, 0.08)',
+        background: isActive ? '#FFFFFF' : '#F8FAFC',
+        border: isActive ? '2px solid #003396' : '1px solid #E2E8F0',
         borderRadius: '16px',
         padding: '24px 22px',
-        boxShadow: isActive ? '0 12px 30px rgba(203, 233, 107, 0.2)' : '0 2px 8px rgba(0,0,0,0.02)',
+        boxShadow: isActive ? '0 12px 30px rgba(0, 51, 150, 0.12)' : '0 2px 8px rgba(0,0,0,0.02)',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
         transform: isActive ? 'translateY(-3px)' : 'none',
@@ -163,7 +163,7 @@ function StepCard({
         style={{
           fontSize: '28px',
           fontWeight: 800,
-          color: isActive ? '#0F2A24' : '#B4C5BF',
+          color: isActive ? '#0864aa' : '#C2C6D5',
           lineHeight: 1,
           marginBottom: '10px',
           transition: 'color 0.3s ease',
@@ -171,10 +171,10 @@ function StepCard({
       >
         {number}
       </div>
-      <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#12211D', marginBottom: '6px' }}>
+      <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#191C1E', marginBottom: '6px' }}>
         {title}
       </h4>
-      <p style={{ fontSize: '13px', color: '#5E726D', lineHeight: 1.55 }}>
+      <p style={{ fontSize: '13px', color: '#737784', lineHeight: 1.55 }}>
         {desc}
       </p>
     </div>

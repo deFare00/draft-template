@@ -15,7 +15,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
       id="home"
       style={{
         position: 'relative',
-        background: 'linear-gradient(145deg, #0A221F 0%, #0F2D28 35%, #1B453D 65%, #4C7268 85%, #B4C8BF 100%)',
+        background: 'linear-gradient(155deg, #184F5B 0%, #2A6C7B 25%, #468E9E 50%, #76BAC7 75%, #BBE3E8 92%, #E9F7F8 100%)',
         paddingTop: '130px',
         paddingBottom: '120px',
         overflow: 'hidden',
@@ -31,7 +31,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
           width: '500px',
           height: '500px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(203, 233, 107, 0.15) 0%, rgba(203, 233, 107, 0) 70%)',
+          background: 'radial-gradient(circle, rgba(181, 154, 88, 0.25) 0%, rgba(181, 154, 88, 0) 70%)',
           filter: 'blur(60px)',
           pointerEvents: 'none',
         }}
@@ -41,10 +41,10 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
           position: 'absolute',
           bottom: '5%',
           left: '10%',
-          width: '400px',
-          height: '400px',
+          width: '450px',
+          height: '450px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(18, 51, 46, 0.6) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(42, 108, 123, 0.6) 0%, transparent 70%)',
           filter: 'blur(50px)',
           pointerEvents: 'none',
         }}
@@ -87,7 +87,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                   color: '#E3ECE8',
                 }}
               >
-                Welcome To Optibiz
+                Lorem Ipsum Dolor
               </div>
 
               {/* Floating feature label */}
@@ -103,8 +103,8 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                   lineHeight: 1.3,
                 }}
               >
-                <CheckCircle2 size={16} color="#CBE96B" style={{ flexShrink: 0 }} />
-                <span>Guiding Financial Journey To Elevating Your Business Destiny</span>
+                <CheckCircle2 size={16} color="#C1A74F" style={{ flexShrink: 0 }} />
+                <span>Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
               </div>
             </div>
 
@@ -119,9 +119,9 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                 marginBottom: '24px',
               }}
             >
-              Where The <br />
-              Expertise Creates <br />
-              Excellence
+              Lorem Ipsum <br />
+              Dolor Sit Amet <br />
+              Consectetur
             </h1>
 
             {/* Description */}
@@ -129,7 +129,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
               style={{
                 fontSize: '15.5px',
                 lineHeight: 1.7,
-                color: '#B5CAC3',
+                color: '#D8E2FF',
                 maxWidth: '480px',
                 marginBottom: '36px',
               }}
@@ -155,7 +155,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                   padding: '13px 28px',
                 }}
               >
-                Let&apos;s Get Started <ArrowRight size={17} />
+                Lorem Ipsum <ArrowRight size={17} />
               </button>
 
               {/* Video Play Button */}
@@ -175,14 +175,14 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'scale(1.08)';
-                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(203, 233, 107, 0.4)';
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(193, 167, 79, 0.4)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'scale(1)';
                   e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.15)';
                 }}
               >
-                <Play size={18} fill="#0F2B27" color="#0F2B27" style={{ marginLeft: '2px' }} />
+                <Play size={18} fill="#0864aa" color="#0864aa" style={{ marginLeft: '2px' }} />
               </button>
             </div>
 
@@ -202,16 +202,16 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '2px', marginBottom: '2px' }}>
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={14} fill="#F7C948" color="#F7C948" />
+                      <Star key={i} size={14} fill="#C1A74F" color="#C1A74F" />
                     ))}
-                    <span style={{ fontSize: '11.5px', color: '#D1DDD9', marginLeft: '4px', fontWeight: 600 }}>
+                    <span style={{ fontSize: '11.5px', color: '#D8E2FF', marginLeft: '4px', fontWeight: 600 }}>
                       (4,5/5)
                     </span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
                     <span style={{ fontSize: '24px', fontWeight: 800, color: '#FFFFFF' }}>4.5</span>
-                    <span style={{ fontSize: '11px', color: '#A1B7B0', lineHeight: 1.2, maxWidth: '100px' }}>
-                      Positive Reviews From Our Customer
+                    <span style={{ fontSize: '11px', color: '#B6CCFF', lineHeight: 1.2, maxWidth: '100px' }}>
+                      Lorem ipsum dolor sit amet consectetur
                     </span>
                   </div>
                 </div>
@@ -219,13 +219,13 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
 
               {/* Team Avatar Stack */}
               <div>
-                <div style={{ fontSize: '12px', fontWeight: 600, color: '#C6DDD5', marginBottom: '6px' }}>
-                  Join Our Team Now:
+                <div style={{ fontSize: '12px', fontWeight: 600, color: '#D8E2FF', marginBottom: '6px' }}>
+                  Lorem Ipsum:
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <Image
                     src="/images/team-avatar-stack.png"
-                    alt="Optibiz Team members"
+                    alt="Team members"
                     width={95}
                     height={32}
                     style={{ objectFit: 'contain' }}
@@ -255,7 +255,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
             >
               <Image
                 src="/images/hero-mockup.png"
-                alt="Optibiz Mobile Finance App"
+                alt="Mobile App"
                 width={460}
                 height={520}
                 priority
@@ -272,8 +272,8 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
                   position: 'absolute',
                   bottom: '30px',
                   right: '20px',
-                  background: '#CBE96B',
-                  color: '#0F2A24',
+                  background: '#C1A74F',
+                  color: '#FFFFFF',
                   padding: '14px 22px',
                   borderRadius: '16px',
                   boxShadow: '0 12px 30px rgba(0, 0, 0, 0.25)',
@@ -288,7 +288,7 @@ export default function Hero({ onOpenQuote, onOpenVideo }: HeroProps) {
               >
                 <div style={{ fontSize: '26px', fontWeight: 800, lineHeight: 1 }}>25+</div>
                 <div style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: '2px' }}>
-                  Years Of Experience
+                  Lorem Ipsum Dolor
                 </div>
               </div>
             </div>

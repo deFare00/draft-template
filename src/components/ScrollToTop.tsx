@@ -38,8 +38,8 @@ export default function ScrollToTop() {
         width: '46px',
         height: '46px',
         borderRadius: '50%',
-        backgroundColor: '#CBE96B',
-        color: '#0F2A24',
+        backgroundColor: '#C1A74F',
+        color: '#FFFFFF',
         boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)',
         display: 'flex',
         alignItems: 'center',
@@ -49,7 +49,7 @@ export default function ScrollToTop() {
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = 'translateY(-4px) scale(1.05)';
-        e.currentTarget.style.boxShadow = '0 12px 30px rgba(203, 233, 107, 0.45)';
+        e.currentTarget.style.boxShadow = '0 12px 30px rgba(193, 167, 79, 0.45)';
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.transform = 'translateY(0) scale(1)';

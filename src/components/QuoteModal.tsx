@@ -47,7 +47,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
     >
       <div
         style={{
-          background: '#0F2B27',
+          background: '#002254',
           border: '1px solid rgba(255, 255, 255, 0.15)',
           borderRadius: '24px',
           width: '100%',
@@ -90,8 +90,8 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 width: '64px',
                 height: '64px',
                 borderRadius: '50%',
-                background: 'rgba(203, 233, 107, 0.2)',
-                color: '#CBE96B',
+                background: 'rgba(193, 167, 79, 0.2)',
+                color: '#C1A74F',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -101,7 +101,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
               <CheckCircle size={36} />
             </div>
             <h3 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '10px' }}>Request Received!</h3>
-            <p style={{ fontSize: '14px', color: '#B5CAC3', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '14px', color: '#B6CCFF', lineHeight: 1.6 }}>
               Thank you, <strong style={{ color: '#FFFFFF' }}>{formData.name || 'Valued Client'}</strong>. Our senior finance specialist will contact you shortly.
             </p>
           </div>
@@ -112,8 +112,8 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '6px',
-                background: 'rgba(203, 233, 107, 0.15)',
-                color: '#CBE96B',
+                background: 'rgba(193, 167, 79, 0.2)',
+                color: '#C1A74F',
                 fontSize: '12px',
                 fontWeight: 700,
                 padding: '4px 12px',
@@ -121,14 +121,14 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 marginBottom: '12px',
               }}
             >
-              <ShieldCheck size={14} /> Confidential Consultation
+              <ShieldCheck size={14} /> Lorem Ipsum Dolor
             </div>
 
             <h3 style={{ fontSize: '24px', fontWeight: 800, marginBottom: '6px', letterSpacing: '-0.01em' }}>
-              Request A Free Strategy Quote
+              Lorem Ipsum Dolor Sit Amet
             </h3>
             <p style={{ fontSize: '13.5px', color: '#9BB0AA', marginBottom: '24px' }}>
-              Tell us about your organization and financial objectives.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -171,10 +171,10 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     style={inputStyle}
                   >
-                    <option value="Financial Consulting" style={{ background: '#0F2B27', color: '#fff' }}>Financial Consulting</option>
-                    <option value="Business Strategies" style={{ background: '#0F2B27', color: '#fff' }}>Business Strategies</option>
-                    <option value="Taxes & Accounting" style={{ background: '#0F2B27', color: '#fff' }}>Taxes & Accounting</option>
-                    <option value="Operational Consulting" style={{ background: '#0F2B27', color: '#fff' }}>Operational Consulting</option>
+                    <option value="Financial Consulting" style={{ background: '#002254', color: '#fff' }}>Financial Consulting</option>
+                    <option value="Business Strategies" style={{ background: '#002254', color: '#fff' }}>Business Strategies</option>
+                    <option value="Taxes & Accounting" style={{ background: '#002254', color: '#fff' }}>Taxes & Accounting</option>
+                    <option value="Operational Consulting" style={{ background: '#002254', color: '#fff' }}>Operational Consulting</option>
                   </select>
                 </div>
                 <div>
@@ -186,10 +186,10 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     style={inputStyle}
                   >
-                    <option value="Under $10k" style={{ background: '#0F2B27', color: '#fff' }}>Under $10,000</option>
-                    <option value="$10k - $50k" style={{ background: '#0F2B27', color: '#fff' }}>$10,000 - $50,000</option>
-                    <option value="$50k - $200k" style={{ background: '#0F2B27', color: '#fff' }}>$50,000 - $200,000</option>
-                    <option value="$200k+" style={{ background: '#0F2B27', color: '#fff' }}>$200,000+</option>
+                    <option value="Under $10k" style={{ background: '#002254', color: '#fff' }}>Under $10,000</option>
+                    <option value="$10k - $50k" style={{ background: '#002254', color: '#fff' }}>$10,000 - $50,000</option>
+                    <option value="$50k - $200k" style={{ background: '#002254', color: '#fff' }}>$50,000 - $200,000</option>
+                    <option value="$200k+" style={{ background: '#002254', color: '#fff' }}>$200,000+</option>
                   </select>
                 </div>
               </div>

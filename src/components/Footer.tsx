@@ -1,7 +1,6 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -10,7 +9,7 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#0A201D', color: '#D1DDD9', paddingTop: '70px', paddingBottom: '30px' }}>
+    <footer style={{ background: '#001738', color: '#D8E2FF', paddingTop: '70px', paddingBottom: '30px' }}>
       <div className="container">
         <div
           style={{
@@ -18,35 +17,39 @@ export default function Footer() {
             gridTemplateColumns: '1.4fr 1fr 1fr 1.2fr',
             gap: '40px',
             paddingBottom: '50px',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
           }}
           className="footer-grid"
         >
           {/* Col 1: Brand Info */}
           <div>
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '18px' }}>
+            <Link href="/" style={{ display: 'inline-block', marginBottom: '18px' }}>
               <div
                 style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '50%',
-                  background: '#CBE96B',
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  background: 'rgba(255, 255, 255, 0.95)',
+                  padding: '5px 14px',
+                  borderRadius: '10px',
+                  boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)',
                 }}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="7" stroke="#0F2B27" strokeWidth="2.5" />
-                  <path d="M12 5V19" stroke="#0F2B27" strokeWidth="2.5" strokeLinecap="round" />
-                </svg>
+                <Image
+                  src="/images/abvc-logo.webp"
+                  alt="ASEAN Biological Threats Surveillance Centre"
+                  width={150}
+                  height={36}
+                  style={{
+                    height: '32px',
+                    width: 'auto',
+                    objectFit: 'contain',
+                    display: 'block',
+                  }}
+                />
               </div>
-              <span style={{ fontSize: '22px', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em' }}>
-                ptibiz
-              </span>
             </Link>
-            <p style={{ fontSize: '13.5px', color: '#8FA39C', lineHeight: 1.65, maxWidth: '280px', marginBottom: '22px' }}>
-              Empowering enterprises and individuals with state-of-the-art financial consulting, strategic planning, and sustainable growth advisory.
+            <p style={{ fontSize: '13.5px', color: '#B6CCFF', lineHeight: 1.65, maxWidth: '280px', marginBottom: '22px' }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
             {/* Social Icons */}
             <div style={{ display: 'flex', gap: '10px' }}>
@@ -76,28 +79,28 @@ export default function Footer() {
           {/* Col 2: Navigation */}
           <div>
             <h4 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '20px' }}>
-              Quick Links
+              Lorem Ipsum
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <FooterLink href="#home">Home</FooterLink>
               <FooterLink href="#about">About Us</FooterLink>
-              <FooterLink href="#services">Our Services</FooterLink>
+              <FooterLink href="#services">Services</FooterLink>
               <FooterLink href="#how-we-work">How We Work</FooterLink>
-              <FooterLink href="#testimonials">Client Reviews</FooterLink>
+              <FooterLink href="#testimonials">Testimonials</FooterLink>
             </ul>
           </div>
 
           {/* Col 3: Services */}
           <div>
             <h4 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '20px' }}>
-              Our Services
+              Dolor Sit Amet
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <FooterLink href="#services">Business Strategies</FooterLink>
-              <FooterLink href="#services">Taxes & Accounting</FooterLink>
-              <FooterLink href="#services">Financial Planning</FooterLink>
-              <FooterLink href="#features">Operational Consulting</FooterLink>
-              <FooterLink href="#features">Wealth Management</FooterLink>
+              <FooterLink href="#services">Lorem Ipsum</FooterLink>
+              <FooterLink href="#services">Dolor Sit Amet</FooterLink>
+              <FooterLink href="#services">Consectetur Elit</FooterLink>
+              <FooterLink href="#features">Sed Do Eiusmod</FooterLink>
+              <FooterLink href="#features">Tempor Incididunt</FooterLink>
             </ul>
           </div>
 
@@ -106,18 +109,18 @@ export default function Footer() {
             <h4 style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF', marginBottom: '20px' }}>
               Contact Us
             </h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '13.5px', color: '#8FA39C' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '13.5px', color: '#B6CCFF' }}>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                <MapPin size={16} color="#CBE96B" style={{ flexShrink: 0, marginTop: '3px' }} />
-                <span>124 FinTech Avenue, Suite 800, Financial District, NY 10005</span>
+                <MapPin size={16} color="#C1A74F" style={{ flexShrink: 0, marginTop: '3px' }} />
+                <span>Lorem ipsum dolor sit amet, 12345 Consectetur</span>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <Phone size={16} color="#CBE96B" style={{ flexShrink: 0 }} />
-                <span>+1 (800) 456-7890</span>
+                <Phone size={16} color="#C1A74F" style={{ flexShrink: 0 }} />
+                <span>+12 345 678 900</span>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <Mail size={16} color="#CBE96B" style={{ flexShrink: 0 }} />
-                <span>contact@optibiz-consulting.com</span>
+                <Mail size={16} color="#C1A74F" style={{ flexShrink: 0 }} />
+                <span>lorem@ipsum-consulting.com</span>
               </div>
             </div>
           </div>
@@ -133,16 +136,16 @@ export default function Footer() {
             flexWrap: 'wrap',
             gap: '16px',
             fontSize: '12.5px',
-            color: '#6F847E',
+            color: '#8FA39C',
           }}
         >
           <div>
-            &copy; {new Date().getFullYear()} Optibiz Consulting. All rights reserved.
+            &copy; {new Date().getFullYear()} Lorem Ipsum. All rights reserved.
           </div>
           <div style={{ display: 'flex', gap: '20px' }}>
-            <Link href="#" style={{ color: '#8FA39C' }}>Privacy Policy</Link>
-            <Link href="#" style={{ color: '#8FA39C' }}>Terms of Service</Link>
-            <Link href="#" style={{ color: '#8FA39C' }}>Security</Link>
+            <Link href="#" style={{ color: '#B6CCFF' }}>Privacy Policy</Link>
+            <Link href="#" style={{ color: '#B6CCFF' }}>Terms of Service</Link>
+            <Link href="#" style={{ color: '#B6CCFF' }}>Security</Link>
           </div>
           <button
             onClick={scrollToTop}
@@ -152,19 +155,19 @@ export default function Footer() {
               height: '34px',
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.08)',
-              color: '#CBE96B',
+              color: '#C1A74F',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               transition: 'all 0.2s ease',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#CBE96B';
-              e.currentTarget.style.color = '#0F2B27';
+              e.currentTarget.style.background = '#C1A74F';
+              e.currentTarget.style.color = '#FFFFFF';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.color = '#CBE96B';
+              e.currentTarget.style.color = '#C1A74F';
             }}
           >
             <ArrowUp size={16} />
@@ -195,12 +198,12 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
         href={href}
         style={{
           fontSize: '13.5px',
-          color: '#8FA39C',
+          color: '#B6CCFF',
           transition: 'color 0.2s ease',
           display: 'inline-block',
         }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = '#CBE96B')}
-        onMouseLeave={(e) => (e.currentTarget.style.color = '#8FA39C')}
+        onMouseEnter={(e) => (e.currentTarget.style.color = '#C1A74F')}
+        onMouseLeave={(e) => (e.currentTarget.style.color = '#B6CCFF')}
       >
         {children}
       </Link>
@@ -218,20 +221,20 @@ function SocialButton({ children, href }: { children: React.ReactNode; href: str
         width: '34px',
         height: '34px',
         borderRadius: '50%',
-        background: 'rgba(255, 255, 255, 0.06)',
-        color: '#D1DDD9',
+        background: 'rgba(255, 255, 255, 0.08)',
+        color: '#D8E2FF',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         transition: 'all 0.2s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.background = '#CBE96B';
-        e.currentTarget.style.color = '#0F2B27';
+        e.currentTarget.style.background = '#C1A74F';
+        e.currentTarget.style.color = '#FFFFFF';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.06)';
-        e.currentTarget.style.color = '#D1DDD9';
+        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+        e.currentTarget.style.color = '#D8E2FF';
       }}
     >
       {children}

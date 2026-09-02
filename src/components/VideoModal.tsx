@@ -28,7 +28,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
     >
       <div
         style={{
-          background: '#0F2B27',
+          background: '#002254',
           border: '1px solid rgba(255, 255, 255, 0.15)',
           borderRadius: '20px',
           width: '100%',
@@ -51,8 +51,8 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '15px', fontWeight: 700 }}>
-            <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#CBE96B' }} />
-            Optibiz Consulting Overview
+            <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#C1A74F' }} />
+            Lorem Ipsum Dolor
           </div>
           <button
             onClick={onClose}

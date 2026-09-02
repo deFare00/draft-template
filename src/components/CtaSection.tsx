@@ -25,13 +25,14 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
       <div className="container">
         <div
           style={{
-            background: 'linear-gradient(135deg, #0F2B27 0%, #17423B 60%, #10332D 100%)',
+            background: 'linear-gradient(135deg, #001f4d 0%, #002D72 50%, #003396 100%)',
             borderRadius: '24px',
             padding: '60px 48px',
             color: '#FFFFFF',
             position: 'relative',
             overflow: 'hidden',
-            boxShadow: '0 25px 60px rgba(15, 43, 39, 0.25)',
+            boxShadow: '0 25px 60px rgba(0, 31, 77, 0.4)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
           }}
           className="cta-banner"
         >
@@ -44,7 +45,7 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
               width: '400px',
               height: '400px',
               borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(203, 233, 107, 0.2) 0%, transparent 70%)',
+              background: 'radial-gradient(circle, rgba(193, 167, 79, 0.25) 0%, transparent 70%)',
               filter: 'blur(50px)',
               pointerEvents: 'none',
             }}
@@ -67,8 +68,8 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '6px',
-                  background: 'rgba(203, 233, 107, 0.15)',
-                  color: '#CBE96B',
+                  background: 'rgba(193, 167, 79, 0.2)',
+                  color: '#C1A74F',
                   fontSize: '13px',
                   fontWeight: 700,
                   padding: '6px 14px',
@@ -76,7 +77,7 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                   marginBottom: '18px',
                 }}
               >
-                <Sparkles size={14} /> Ready to Grow Your Business?
+                <Sparkles size={14} /> Lorem Ipsum Dolor Sit Amet
               </div>
               <h2
                 style={{
@@ -87,11 +88,11 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                   letterSpacing: '-0.02em',
                 }}
               >
-                Let&apos;s Build Your Financial <br />
-                Success Story Together
+                Lorem Ipsum Dolor Sit Amet <br />
+                Consectetur Adipiscing Elit
               </h2>
-              <p style={{ fontSize: '15px', color: '#B5CAC3', maxWidth: '480px', lineHeight: 1.6 }}>
-                Schedule a complimentary 30-minute strategic consultation with our lead financial advisors today.
+              <p style={{ fontSize: '15px', color: '#B6CCFF', maxWidth: '480px', lineHeight: 1.6 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.
               </p>
             </div>
 
@@ -100,7 +101,7 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
               <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 <input
                   type="email"
-                  placeholder="Enter your work email"
+                  placeholder="Lorem ipsum dolor sit amet..."
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -108,8 +109,8 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                     flex: '1 1 200px',
                     padding: '14px 20px',
                     borderRadius: '9999px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    background: 'rgba(255, 255, 255, 0.1)',
+                    border: '1px solid rgba(255, 255, 255, 0.25)',
+                    background: 'rgba(255, 255, 255, 0.12)',
                     color: '#FFFFFF',
                     fontSize: '14px',
                     outline: 'none',
@@ -121,7 +122,7 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                   className="btn-lime"
                   style={{ padding: '14px 24px', fontSize: '14px', whiteSpace: 'nowrap' }}
                 >
-                  Get Started <ArrowRight size={16} />
+                  Lorem Ipsum <ArrowRight size={16} />
                 </button>
               </form>
 
@@ -131,24 +132,24 @@ export default function CtaSection({ onOpenQuote }: CtaSectionProps) {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
-                    color: '#CBE96B',
+                    color: '#C1A74F',
                     fontSize: '13px',
                     fontWeight: 600,
                   }}
                 >
-                  <CheckCircle size={16} /> Thank you! Our advisor will contact you within 24 hours.
+                  <CheckCircle size={16} /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
               )}
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '12px', color: '#8FA39C' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '12px', color: '#B6CCFF' }}>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                  <CheckCircle size={14} color="#CBE96B" /> Free Consultation
+                  <CheckCircle size={14} color="#C1A74F" /> Lorem Ipsum
                 </span>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                  <CheckCircle size={14} color="#CBE96B" /> No Commitment
+                  <CheckCircle size={14} color="#C1A74F" /> Dolor Sit Amet
                 </span>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                  <CheckCircle size={14} color="#CBE96B" /> Confidential
+                  <CheckCircle size={14} color="#C1A74F" /> Consectetur
                 </span>
               </div>
             </div>

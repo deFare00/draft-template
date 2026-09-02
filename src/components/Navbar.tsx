@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronDown, ArrowRight, Menu, X } from 'lucide-react';
 
 interface NavbarProps {
@@ -29,11 +30,11 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
         left: 0,
         right: 0,
         zIndex: 50,
-        padding: scrolled ? '12px 0' : '20px 0',
+        padding: scrolled ? '10px 0' : '18px 0',
         transition: 'all 0.3s ease',
-        background: scrolled ? 'rgba(15, 43, 39, 0.94)' : 'transparent',
+        background: scrolled ? 'rgba(0, 96, 169, 0.96)' : 'transparent',
         backdropFilter: scrolled ? 'blur(16px)' : 'none',
-        boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.15)' : 'none',
+        boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.2)' : 'none',
       }}
     >
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -41,44 +42,43 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
           <div
             style={{
-              width: '32px',
-              height: '32px',
-              borderRadius: '50%',
-              background: '#CBE96B',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 2px 10px rgba(203, 233, 107, 0.4)',
+              background: 'rgba(255, 255, 255, 0.96)',
+              padding: '5px 14px',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.12)',
+              border: '1px solid rgba(255, 255, 255, 0.8)',
             }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="7" stroke="#0F2B27" strokeWidth="2.5" />
-              <path d="M12 5V19" stroke="#0F2B27" strokeWidth="2.5" strokeLinecap="round" />
-            </svg>
+            <Image
+              src="/images/abvc-logo.webp"
+              alt="ASEAN Biological Threats Surveillance Centre"
+              width={160}
+              height={38}
+              priority
+              style={{
+                height: '34px',
+                width: 'auto',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+            />
           </div>
-          <span
-            style={{
-              fontSize: '22px',
-              fontWeight: 800,
-              color: '#FFFFFF',
-              letterSpacing: '-0.02em',
-            }}
-          >
-            ptibiz
-          </span>
         </Link>
 
         {/* Center Navigation Capsule (Desktop) */}
         <nav
           className="desktop-nav"
           style={{
-            background: 'rgba(255, 255, 255, 0.08)',
+            background: '#0060a9',
             backdropFilter: 'blur(12px)',
-            border: '1px solid rgba(255, 255, 255, 0.12)',
+            border: '1px solid rgba(255, 255, 255, 0.25)',
             borderRadius: '9999px',
             padding: '6px 14px',
             alignItems: 'center',
             gap: '6px',
+            boxShadow: '0 6px 20px rgba(0, 96, 169, 0.35)',
           }}
         >
           <NavLink href="#home" active>Home</NavLink>
@@ -93,7 +93,7 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
           >
             <button
               style={{
-                color: '#D1DDD9',
+                color: '#FFFFFF',
                 fontSize: '13.5px',
                 fontWeight: 500,
                 padding: '6px 14px',
@@ -113,12 +113,12 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
                   top: '100%',
                   left: 0,
                   marginTop: '8px',
-                  background: '#0F2B27',
-                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  background: '#0060a9',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
                   borderRadius: '12px',
                   padding: '8px 0',
                   minWidth: '160px',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                  boxShadow: '0 10px 30px rgba(0, 96, 169, 0.4)',
                   zIndex: 60,
                 }}
               >
@@ -152,7 +152,8 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
             color: '#FFFFFF',
             padding: '8px',
             borderRadius: '8px',
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: '#0060a9',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
           }}
         >
           {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -167,11 +168,11 @@ export default function Navbar({ onOpenQuote }: NavbarProps) {
             top: '70px',
             left: '16px',
             right: '16px',
-            background: '#0F2B27',
-            border: '1px solid rgba(255, 255, 255, 0.15)',
+            background: '#0060a9',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
             borderRadius: '20px',
             padding: '24px',
-            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)',
+            boxShadow: '0 20px 40px rgba(0, 96, 169, 0.5)',
             display: 'flex',
             flexDirection: 'column',
             gap: '16px',

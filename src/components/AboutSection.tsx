@@ -67,22 +67,22 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
                   width: '42px',
                   height: '42px',
                   borderRadius: '50%',
-                  background: '#CBE96B',
+                  background: '#C1A74F',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   flexShrink: 0,
-                  color: '#0F2A24',
-                  boxShadow: '0 4px 12px rgba(203, 233, 107, 0.3)',
+                  color: '#FFFFFF',
+                  boxShadow: '0 4px 12px rgba(193, 167, 79, 0.35)',
                 }}
               >
                 <Compass size={22} />
               </div>
               <div>
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#12211D', marginBottom: '6px' }}>
-                  Company Vission
+                <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#191C1E', marginBottom: '6px' }}>
+                  Lorem Ipsum
                 </h4>
-                <p style={{ fontSize: '13.5px', color: '#5E726D', lineHeight: 1.6 }}>
+                <p style={{ fontSize: '13.5px', color: '#737784', lineHeight: 1.6 }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
               </div>
@@ -92,9 +92,9 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
           {/* Right Column: Heading + Mission + CTA Bar */}
           <div>
             <div className="pill-badge">About Us</div>
-            <h2 className="section-title" style={{ marginBottom: '28px' }}>
-              The Best Finance <br />
-              Consultant In Town
+            <h2 className="section-title" style={{ marginBottom: '28px', color: '#191C1E' }}>
+              Lorem Ipsum Dolor <br />
+              Sit Amet Consectetur
             </h2>
 
             {/* Company Mission */}
@@ -104,22 +104,22 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
                   width: '42px',
                   height: '42px',
                   borderRadius: '50%',
-                  background: '#CBE96B',
+                  background: '#C1A74F',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   flexShrink: 0,
-                  color: '#0F2A24',
-                  boxShadow: '0 4px 12px rgba(203, 233, 107, 0.3)',
+                  color: '#FFFFFF',
+                  boxShadow: '0 4px 12px rgba(193, 167, 79, 0.35)',
                 }}
               >
                 <Lightbulb size={22} />
               </div>
               <div>
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#12211D', marginBottom: '6px' }}>
-                  Company Mission
+                <h4 style={{ fontSize: '16px', fontWeight: 700, color: '#191C1E', marginBottom: '6px' }}>
+                  Dolor Sit Amet
                 </h4>
-                <p style={{ fontSize: '13.5px', color: '#5E726D', lineHeight: 1.6 }}>
+                <p style={{ fontSize: '13.5px', color: '#737784', lineHeight: 1.6 }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
               </div>
@@ -128,21 +128,22 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
             {/* Dark CTA Banner Bar */}
             <div
               style={{
-                background: '#12332E',
+                background: '#0864aa',
                 borderRadius: '9999px',
                 padding: '12px 14px 12px 24px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 gap: '16px',
-                boxShadow: '0 10px 30px rgba(18, 51, 46, 0.2)',
+                boxShadow: '0 10px 30px rgba(8, 100, 170, 0.25)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
               }}
               className="about-cta-bar"
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <CheckCircle2 size={20} color="#CBE96B" style={{ flexShrink: 0 }} />
-                <span style={{ fontSize: '13px', color: '#E1EBE7', fontWeight: 500, lineHeight: 1.4 }}>
-                  Join us to achieve sustainable growth and reach your financial goals with the right strategies.
+                <CheckCircle2 size={20} color="#C1A74F" style={{ flexShrink: 0 }} />
+                <span style={{ fontSize: '13px', color: '#FFFFFF', fontWeight: 500, lineHeight: 1.4 }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
                 </span>
               </div>
               <button
@@ -155,7 +156,7 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
                   flexShrink: 0,
                 }}
               >
-                Learn More <ArrowRight size={15} />
+                Lorem Ipsum <ArrowRight size={15} />
               </button>
             </div>
           </div>
@@ -168,47 +169,47 @@ export default function AboutSection({ onOpenQuote }: AboutSectionProps) {
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '30px',
             paddingTop: '40px',
-            borderTop: '1px solid rgba(15, 43, 39, 0.08)',
+            borderTop: '1px solid #E2E8F0',
           }}
           className="metrics-grid"
         >
           {/* Stat 1 */}
-          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #CBE96B' }}>
-            <div style={{ fontSize: '38px', fontWeight: 800, color: '#12211D', lineHeight: 1.1, marginBottom: '6px' }}>
-              {counterActive ? '25' : '0'}<span style={{ color: '#CBE96B' }}> +</span>
+          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #003396' }}>
+            <div style={{ fontSize: '38px', fontWeight: 800, color: '#0864aa', lineHeight: 1.1, marginBottom: '6px' }}>
+              {counterActive ? '25' : '0'}<span style={{ color: '#C1A74F' }}> +</span>
             </div>
-            <p style={{ fontSize: '13px', color: '#5E726D', lineHeight: 1.4 }}>
-              A legacy of expertise spanning 24+ years.
+            <p style={{ fontSize: '13px', color: '#737784', lineHeight: 1.4 }}>
+              Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
 
           {/* Stat 2 */}
-          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #CBE96B' }}>
-            <div style={{ fontSize: '38px', fontWeight: 800, color: '#12211D', lineHeight: 1.1, marginBottom: '6px' }}>
-              {counterActive ? '150K' : '0'}<span style={{ color: '#CBE96B' }}> +</span>
+          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #003396' }}>
+            <div style={{ fontSize: '38px', fontWeight: 800, color: '#0864aa', lineHeight: 1.1, marginBottom: '6px' }}>
+              {counterActive ? '150K' : '0'}<span style={{ color: '#C1A74F' }}> +</span>
             </div>
-            <p style={{ fontSize: '13px', color: '#5E726D', lineHeight: 1.4 }}>
-              Where ideas flourish and projects thrive.
+            <p style={{ fontSize: '13px', color: '#737784', lineHeight: 1.4 }}>
+              Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
 
           {/* Stat 3 */}
-          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #CBE96B' }}>
-            <div style={{ fontSize: '38px', fontWeight: 800, color: '#12211D', lineHeight: 1.1, marginBottom: '6px' }}>
+          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #003396' }}>
+            <div style={{ fontSize: '38px', fontWeight: 800, color: '#0864aa', lineHeight: 1.1, marginBottom: '6px' }}>
               {counterActive ? '98%' : '0%'}
             </div>
-            <p style={{ fontSize: '13px', color: '#5E726D', lineHeight: 1.4 }}>
-              Striving for customer satisfaction is top priority.
+            <p style={{ fontSize: '13px', color: '#737784', lineHeight: 1.4 }}>
+              Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
 
           {/* Stat 4 */}
-          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #CBE96B' }}>
-            <div style={{ fontSize: '38px', fontWeight: 800, color: '#12211D', lineHeight: 1.1, marginBottom: '6px' }}>
-              {counterActive ? '$40M' : '$0'}<span style={{ color: '#CBE96B' }}> +</span>
+          <div style={{ position: 'relative', paddingLeft: '16px', borderLeft: '3px solid #003396' }}>
+            <div style={{ fontSize: '38px', fontWeight: 800, color: '#0864aa', lineHeight: 1.1, marginBottom: '6px' }}>
+              {counterActive ? '$40M' : '$0'}<span style={{ color: '#C1A74F' }}> +</span>
             </div>
-            <p style={{ fontSize: '13px', color: '#5E726D', lineHeight: 1.4 }}>
-              This is our pure benefit to our clients
+            <p style={{ fontSize: '13px', color: '#737784', lineHeight: 1.4 }}>
+              Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
         </div>

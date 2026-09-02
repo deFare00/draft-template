@@ -1,39 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 :root {
-  /* Brand Color Tokens */
-  --color-primary-dark: #0F2B27;
-  --color-primary-deep: #0B221F;
-  --color-primary-surface: #12332E;
-  --color-primary-light: #1A443D;
+  /* Brand Color Tokens from COLORS.md */
+  --color-primary-dark: #002254;
+  --color-primary-deep: #001738;
+  --color-primary-surface: #002D72;
+  --color-primary-light: #003396;
+  --color-primary-container: #0052b4;
+  --color-asean-blue: #003396;
   
-  --color-accent-lime: #CBE96B;
-  --color-accent-lime-hover: #bde055;
-  --color-accent-lime-tint: #E8F4D0;
-  --color-accent-lime-text: #233D14;
+  --color-accent-lime: #C1A74F;
+  --color-accent-lime-hover: #b0953e;
+  --color-accent-lime-tint: #ffdf9d;
+  --color-accent-lime-text: #5b4300;
+  --color-asean-gold: #C1A74F;
 
   --color-canvas-white: #FFFFFF;
-  --color-canvas-cream: #F7F6F1;
-  --color-canvas-light: #FBFBFA;
+  --color-canvas-cream: #F8FAFC;
+  --color-canvas-light: #F8F9FC;
 
-  --color-text-dark: #0F2A24;
-  --color-text-heading: #12211D;
-  --color-text-muted: #5E726D;
-  --color-text-light: #9BB0AA;
+  --color-text-dark: #191C1E;
+  --color-text-heading: #191C1E;
+  --color-text-muted: #737784;
+  --color-text-light: #94A3B8;
   --color-text-white: #FFFFFF;
 
-  --color-border-light: rgba(15, 43, 39, 0.08);
+  --color-border-light: #E2E8F0;
   --color-border-dark: rgba(255, 255, 255, 0.12);
 
   /* Typography */
-  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-main: 'Public Sans', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(15, 43, 39, 0.04);
-  --shadow-md: 0 8px 24px rgba(15, 43, 39, 0.08);
-  --shadow-lg: 0 16px 40px rgba(15, 43, 39, 0.12);
-  --shadow-glow-lime: 0 0 35px rgba(203, 233, 107, 0.35);
-  --shadow-glow-green: 0 10px 40px rgba(15, 43, 39, 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 51, 150, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 51, 150, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 51, 150, 0.12);
+  --shadow-glow-lime: 0 0 35px rgba(193, 167, 79, 0.35);
+  --shadow-glow-green: 0 10px 40px rgba(0, 34, 84, 0.35);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,14 +102,15 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--color-accent-lime-tint);
-  color: var(--color-accent-lime-text);
+  background-color: #d8e2ff;
+  color: #003c87;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2px;
   padding: 6px 18px;
   border-radius: 9999px;
   margin-bottom: 16px;
+  border: 1px solid rgba(0, 60, 135, 0.15);
   transition: transform var(--transition-fast);
 }
 
@@ -115,9 +119,9 @@ img {
 }
 
 .pill-badge-dark {
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #E1EBE7;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
 }
 
@@ -142,20 +146,20 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--color-accent-lime);
-  color: #0F2A24;
+  background-color: #C1A74F;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
   padding: 12px 24px;
   border-radius: 9999px;
-  box-shadow: 0 4px 15px rgba(203, 233, 107, 0.3);
+  box-shadow: 0 4px 15px rgba(193, 167, 79, 0.35);
   transition: all var(--transition-normal);
 }
 
 .btn-lime:hover {
-  background-color: var(--color-accent-lime-hover);
+  background-color: #b0953e;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(203, 233, 107, 0.45);
+  box-shadow: 0 8px 25px rgba(193, 167, 79, 0.5);
 }
 
 .btn-lime:active {
@@ -168,12 +172,12 @@ img {
   justify-content: center;
   gap: 10px;
   background-color: var(--color-canvas-white);
-  color: var(--color-primary-dark);
+  color: #003c87;
   font-weight: 700;
   font-size: 14px;
   padding: 10px 22px;
   border-radius: 9999px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all var(--transition-normal);
 }
 
